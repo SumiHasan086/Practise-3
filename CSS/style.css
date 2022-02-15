@@ -1,0 +1,251 @@
+
+/* google-fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Average&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+
+/* default */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #f79332;
+    --secondary-color: #3ca434;
+}
+
+body {
+    font-family: 'Average', serif;
+}
+
+a {
+    text-decoration: none
+}
+ul{
+    list-style: none;
+}
+.container {
+    max-width: 980px;
+    padding:0px 20px;
+    margin: 0 auto;
+}
+.sec-title {
+    color: var(--secondary-color);
+    margin-bottom:25px;
+    font-family: Redressed;
+    font-size: 65px;
+    font-weight: 400;
+    text-align: center;
+}
+.sec-detail{
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+}
+
+/* header */
+
+#header {
+    background: url(../images/header-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.top-img {
+    width: 300px;
+    margin: auto;
+}
+
+.top-img img {
+    width: 100%;
+}
+
+.bottom-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-link {
+    font-family: inherit;
+    font-size: 18px;
+    color: var(--primary-color);
+    padding: 0 20px;
+    position: relative;
+}
+
+.nav-link:after {
+    position: absolute;
+    content: "";
+    background: var(--primary-color);
+    width: 1px;
+    height: 35px;
+    top: -7px;
+    left: 0;
+}
+
+.nav-link:first-child::after {
+    position: absolute;
+    content: "";
+    background: var(--primary-color);
+    width: 0px;
+    height: 0px;
+    top: -9px;
+    left: 0;
+}
+
+/* hero */
+
+#hero {
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    background: url(../images/body-bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center top;
+    position: relative;
+}
+
+/* hero-story */
+.hero-story {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  
+}
+
+.hero-img {
+    margin: 25px 0;
+}
+
+.hero-title {
+    margin-bottom: 25px;
+}
+
+/* hero product */
+.hero.sec-title {  
+    margin-top: 90px;
+}
+
+.hero.sec-title span {
+    background: var(--secondary-color);
+    color: white;
+}
+
+.hero-products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.product-img{
+    width:300px;
+    margin:0 10px;
+    cursor:pointer;
+}
+.product-img img {
+    width: 100%;
+}
+.product-img p {
+    color:#011500;
+    font-family: Average;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    margin-bottom:20px;
+    text-align: center
+}
+
+/* meets */
+#meets{
+    padding:50px 0;
+    background: linear-gradient(90deg, rgba(255, 237, 186, 0.2) 0%, rgba(255, 237, 186, 0) 100%);
+}
+
+
+/* happiness */
+
+#happiness{
+    padding:50px 0;
+    background: linear-gradient(90deg, rgba(62, 171, 54, 0) 0%, rgba(62, 171, 54, 0.1) 100%);
+}
+
+/* footer */
+#footer{
+    background: linear-gradient(90deg, rgba(255, 237, 186, 0.15) 50%, rgba(62, 171, 54, 0.07) 50%);
+}
+#footer .sec-title{
+    padding:50px 0;
+    margin:0;
+    background: white;
+}
+#footer .sec-title span{
+    background: var(--secondary-color);
+    color:white;
+}
+.footer-contents{
+    padding:50px 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    line-height:24px;
+}
+.footer-left{
+    margin:0 120px;
+}
+.footer-left img{
+    width:290px;
+    line-height:24px;
+}
+.footer-left p{
+    text-align: center;
+}
+.footer-right{
+    padding:0 50px;
+}
+.footer-right h2{
+    color:var(--secondary-color);
+    margin-bottom:30px;
+    font-family:Redressed;
+    font-size: 37px;
+    font-weight:400;
+}
+.contact-link ul li{
+    display: flex;
+    line-height:24px;
+    align-items: center;
+    cursor:pointer;
+    margin-bottom:10px;
+}
+.contact-link ul li a{
+    margin-left:16px;
+    font-size:17px;
+    color:#011500;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
